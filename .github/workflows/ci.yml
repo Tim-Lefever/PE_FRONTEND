@@ -17,6 +17,7 @@ jobs:
         with:
           username: '${{ secrets.DOCKERHUB_USERNAME }}'
           password: '${{ secrets.DOCKERHUB_TOKEN }}'
+          
       - name: build image
         run: docker build -t timlefever/pe-opsy-frontend .
       - name: push to dockerhub
