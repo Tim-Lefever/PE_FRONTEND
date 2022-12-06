@@ -16,4 +16,4 @@ RUN npm ci --only=production
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "App.js" ]
+CMD [ "npm", "start" ]
