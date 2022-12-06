@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import '../App.css';
-import ProductCard from '../ProductCard'
+import './App.css';
+import ProductCard from './ProductCard'
 import {Col, Row, Button } from 'antd'
 import 'antd/dist/antd.css'
-import CollectionForm from '../Form'
+import CollectionForm from './Form'
 
 class App extends Component{
 

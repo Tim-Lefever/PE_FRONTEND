@@ -2,13 +2,16 @@
 # Use a Node 16 base image
 FROM node:10
 # Set the working directory to /app inside the container
-RUN mkdir -p /usr
-WORKDIR /usr
+WORKDIR /app
 # Copy app files
-COPY . .
+COPY package.json ./
+COPY package-lock.json ./
 # ==== BUILD =====
 # Install dependencies
 RUN npm install
+
+COPY . .
+
 # Build the app
 RUN npm run build
 # ==== RUN =======
