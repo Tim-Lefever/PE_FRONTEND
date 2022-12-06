@@ -1,6 +1,7 @@
 FROM node:10
 
 # Create app directory
+
 WORKDIR /usr/src/app
 
 # Install app dependencies
@@ -16,4 +17,5 @@ RUN npm ci --only=production
 COPY . .
 
 EXPOSE 8080
+RUN npm run build
 CMD [ "npm", "start" ]
