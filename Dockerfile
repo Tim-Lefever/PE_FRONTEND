@@ -2,7 +2,8 @@
 # Use a Node 16 base image
 FROM node:10
 # Set the working directory to /app inside the container
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 # Copy app files
 COPY . .
 # ==== BUILD =====
