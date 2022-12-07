@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 # Build the app
-RUN npm run build
+#RUN npm run build
 # ==== RUN =======
 # Set the env to "production"
 ENV NODE_ENV production
